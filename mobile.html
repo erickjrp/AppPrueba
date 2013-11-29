@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <title>Erick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+    <!-- Start of first page -->
+    <div data-role="page" id="uno">
+    
+        <div data-role="header">
+            <h1>Pag Uno</h1>
+        </div><!-- /header -->
+    
+        <div data-role="content" data-theme="c">	
+            <p>Aqui viene un boton, deberia redireccionar a otra pagina</p>		
+            <a href="#dos" data-role="button" data-icon="forward" data-iconpos="bottom" data-theme="b">Redireccionar</a>
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>Hecho por Erick Ramirez</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+    
+    
+    <!-- Start of second page -->
+    <div data-role="page" id="dos">
+    
+        <div data-role="header">
+            <h1>Pag Dos</h1>
+        </div><!-- /header -->
+    
+        <div data-role="content" data-theme="c">	
+            <p>Se hizo la redireccion, ahora a probar una lista:</p>		 
+            <div data-role="collapsible-set" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible" data-content-theme="e">
+                    <h3>1 - Item Uno</h3>
+                    <p>Contenido del item uno</p>
+                </div>
+                <div data-role="collapsible" data-theme="b" data-content-theme="b">
+                    <h3>2 - Item Dos</h3>
+                    <p>Contenido del item dos</p>
+                </div>
+			</div> 	
+            
+			<p>Se vuelve a la pagina uno</p>
+            <a href="#uno" data-role="button" data-icon="back" data-iconpos="bottom">Pagina Uno</a>
+            
+        </div><!-- /content -->
+    
+        <div data-role="footer">
+            <h4>Hecho por Erick Ramirez</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+</body>
+</html>
